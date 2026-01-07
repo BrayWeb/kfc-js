@@ -9,6 +9,12 @@ body {
     background-color: #f5f5f5;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;      
+  padding: 16px;
+}
    
 header {
     background-color: #ffffff;
@@ -30,10 +36,10 @@ header img {
 .barra {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border-radius: 30px;
-    gap: 10px;
-    padding: 20px;
+    gap: 20px;
+    padding: 10px;
     background-color: #ffffff;
+    align-content: space-between;
 }
 
 .barra #tema {

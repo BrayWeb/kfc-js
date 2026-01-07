@@ -1,5 +1,5 @@
-var mypassword= "password";
-var email  = "pedrito@gmail.com";
+var mypassword= "1";
+var email  = "p.com";
 
 let button  = document.getElementById('button');
 let email_user = document.getElementById('email');
@@ -9,8 +9,9 @@ button.addEventListener('click', function(){
      
     if(mypassword == password_user.value && email_user.value == email){
         window.location = "./home.html"
+        sessionStorage.setItem("sesion","true");
     }else {
-        document.getElementById('alert-danger').innerText = "Hombree las has embarrado"
+        document.getElementById('alert-danger').innerText = "Error,Digite bien los datos"
         email_user.classList.add('is-invalid')
         password_user.classList.add('is-invalid')
         password_user.value = "" 
